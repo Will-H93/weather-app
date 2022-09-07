@@ -1,14 +1,10 @@
-import '../styles/App.css';
-import LocationDetails from './LocationDetails';
-import PropTypes from 'prop-types';
+import "../styles/App.css";
+import LocationDetails from "./LocationDetails";
+import PropTypes from "prop-types";
 
 function App({ location }) {
   const { city, country } = location;
-  return (
-      <LocationDetails 
-        city={city} 
-        country={country} />
-  );
+  return <LocationDetails city={city} country={country} />;
 }
 
 App.propTypes = {
