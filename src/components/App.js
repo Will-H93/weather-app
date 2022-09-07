@@ -1,11 +1,21 @@
 import '../styles/App.css';
+import LocationDetails from './LocationDetails';
+import PropTypes from 'prop-types';
 
-function App() {
+function App({ location }) {
+  const { city, country } = location;
   return (
-    <div className="prop">
-      <h1>Weather App</h1>
-    </div>
+      <LocationDetails 
+        city={city} 
+        country={country} />
   );
 }
+
+App.propTypes = {
+  location: PropTypes.shape({
+    city: PropTypes.string,
+    country: PropTypes.string,
+  }).isRequired,
+};
 
 export default App;
