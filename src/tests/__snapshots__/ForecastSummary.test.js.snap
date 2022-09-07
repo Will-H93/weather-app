@@ -25,6 +25,12 @@ exports[`ForecastSummary renders 1`] = `
     >
       Stub description
     </div>
+    <div
+      class="forecast-summary__icon"
+      data-testid="forecast-icon"
+    >
+      stubIcon
+    </div>
   </div>
 </DocumentFragment>
 `;

@@ -13,6 +13,9 @@ function ForecastSummary(props) {
         &deg;C
       </div>
       <div className="forecast-summary__description">{description}</div>
+      <div className="forecast-summary__icon" data-testid="forecast-icon">
+        {icon}
+      </div>
     </div>
   );
 }
