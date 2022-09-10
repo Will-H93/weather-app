@@ -17,7 +17,7 @@ const ForecastSummary = (props) => {
       <div className="forecast-summary__description">{description}</div>
     </div>
   );
-}
+};
 
 export default ForecastSummary;
 

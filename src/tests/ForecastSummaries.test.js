@@ -27,12 +27,12 @@ describe("ForecastSummaries", () => {
   it("renders", () => {
     const { asFragment } = render(<ForecastSummaries forecasts={validProps} />);
     expect(asFragment()).toMatchSnapshot();
-  })
+  });
 
   it("renders the correct number of summaries", () => {
     const { getAllByTestId } = render(
-        <ForecastSummaries forecasts={validProps} />
-    )
+      <ForecastSummaries forecasts={validProps} />
+    );
     expect(getAllByTestId("forecast-summary")).toHaveLength(2);
-  })
+  });
 });
