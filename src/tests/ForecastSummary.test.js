@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { render } from "@testing-library/react";
 import ForecastSummary from "../components/ForecastSummary";
 
@@ -11,31 +11,19 @@ describe("ForecastSummary", () => {
       min: 12,
       max: 22,
     },
+    onSelect: () => {},
   };
 
   it("renders", () => {
-    const { asFragment } = render(
-      <ForecastSummary
-        date={validProps.date}
-        description={validProps.description}
-        icon={validProps.icon}
-        temperature={validProps.temperature}
-      />
-    );
+    const { asFragment } = render(<ForecastSummary {...validProps} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders correct values for props", () => {
     const { getByText, getByTestId } = render(
-      <ForecastSummary
-        date={validProps.date}
-        description={validProps.description}
-        icon={validProps.icon}
-        temperature={validProps.temperature}
-      />
+      <ForecastSummary {...validProps} />
     );
-
     expect(getByText("Thu Jan 01 1970")).toHaveClass("forecast-summary__date");
     expect(getByText("Stub description")).toHaveClass(
       "forecast-summary__description"
