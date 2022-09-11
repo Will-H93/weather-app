@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../styles/ForecastDetails.css"
 
 const ForecastDetails = ({ forecast }) => {
   const { date, temperature, wind, humidity } = forecast;
   const formattedDate = new Date(date).toDateString();
   return (
-    <div className="forcast-details" data-testid="forecast-details">
+    <div className="forecast-details" data-testid="forecast-details">
       <div className="forecast-details__date">{formattedDate}</div>
       <div className="forecast-details__tempMin">
         Min Temp: {temperature.min}&deg;C
