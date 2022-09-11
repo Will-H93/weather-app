@@ -15,14 +15,28 @@ describe("ForecastSummary", () => {
   };
 
   it("renders", () => {
-    const { asFragment } = render(<ForecastSummary {...validProps} />);
+    const { asFragment } = render(
+      <ForecastSummary
+        date={validProps.date}
+        description={validProps.description}
+        icon={validProps.icon}
+        temperature={validProps.temperature}
+        onSelect={validProps.onSelect}
+      />
+    );
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders correct values for props", () => {
     const { getByText, getByTestId } = render(
-      <ForecastSummary {...validProps} />
+      <ForecastSummary
+        date={validProps.date}
+        description={validProps.description}
+        icon={validProps.icon}
+        temperature={validProps.temperature}
+        onSelect={validProps.onSelect}
+      />
     );
     expect(getByText("Thu Jan 01 1970")).toHaveClass("forecast-summary__date");
     expect(getByText("Stub description")).toHaveClass(
