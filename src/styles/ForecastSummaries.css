@@ -8,3 +8,9 @@
 .forecast-summary__icon {
   font-size: 30px;
 }
+
+@media (max-width: 768px) {
+  .forecast-summaries {
+    flex-direction: column;
+  }
+}

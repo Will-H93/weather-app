@@ -1,6 +1,6 @@
-import "../styles/App.css";
 import React from "react";
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
+import "../styles/LocationDetails.css";
 
 function LocationDetails({ city, country, errorMessage }) {
   return errorMessage ? (
