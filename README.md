@@ -11,7 +11,7 @@ It contains the following basic information:
 - Corresponding Icons for the description
 - Temperature
 
-For each day, you can also see more details information:
+For each day, you can also see more detailed information:
 
 - Min Temp
 - Max Temp
