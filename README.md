@@ -70,6 +70,6 @@ Launches the test runner for the app, so you can check the current components st
 - I would have a state to change the background based on the current day's description (default)
 - I would use that state to change the background, based on the description of any day selected for more details
 
-### Author
+## Author
 
 - Will Hodgkinson
