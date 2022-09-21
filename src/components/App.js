@@ -17,11 +17,23 @@ const App = () => {
   );
 
   useEffect(() => {
-    getForecast(setSelectedDate, setForecasts, setLocation, searchText, setErrorMessage);
+    getForecast(
+      setSelectedDate,
+      setForecasts,
+      setLocation,
+      searchText,
+      setErrorMessage
+    );
   }, []);
 
   const handleCitySearch = () => {
-    getForecast(setSelectedDate, setForecasts, setLocation, searchText, setErrorMessage);
+    getForecast(
+      setSelectedDate,
+      setForecasts,
+      setLocation,
+      searchText,
+      setErrorMessage
+    );
   };
 
   const handleForecastSelect = (date) => {
