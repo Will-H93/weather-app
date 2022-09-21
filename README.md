@@ -19,6 +19,32 @@ For each day, you can also see more detailed information:
 - Wind Direction
 - Humidity
 
+## Screenshots
+
+### Desktop
+
+![Desktop_Image](Desktop-Weather-App.JPG)
+
+### Mobile
+
+![Mobile_Image](Mobile-Weather-App.JPG)
+
+## Technologies Used
+
+### Language
+
+- React (using `create-react-app`)
+
+### Testing Utilities
+
+- Jest
+- React Testing Library
+
+### Packages
+
+- Axios
+- PropTypes
+
 ## Installation
 
 - Clone this repo and `cd` into it in your IDE
@@ -38,32 +64,6 @@ The page will reload when you make changes.
 ### `npm test`
 
 Launches the test runner for the app, so you can check the current components still work if you wish to make changes.
-
-## Technologies Used
-
-### Language
-
-- React (using `create-react-app`)
-
-### Testing Utilities
-
-- Jest
-- React Testing Library
-
-### Packages
-
-- Axios
-- PropTypes
-
-## Screenshots
-
-### Desktop
-
-![Desktop_Image](Desktop-Weather-App.JPG)
-
-### Mobile
-
-![Mobile_Image](Mobile-Weather-App.JPG)
 
 ## If I had more time
 
