@@ -49,7 +49,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### Desktop
 
-![Desktop_Image](Desktop-Weather-App-Latest.JPG)
+![Desktop_Image](Desktop-Weather-App.JPG)
 
 ### Mobile
 
