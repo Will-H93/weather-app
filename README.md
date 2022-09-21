@@ -2,9 +2,22 @@
 
 ## About
 
-A weather application built using React. Enter a valid city and you will be returned with the weather forecast for the next 5 days, you can click on each day's forecast for more detail. The weather data is fetched from the Mancester Codes Weather API.
+A weather application built using React. Enter a valid city in Great Britain and you will be returned with the weather forecast for the next 5 days, you can click on each day's forecast for more detail. The weather data is fetched from the Mancester Codes Weather API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It contains the following basic information:
+
+- Date
+- Description (Clouds, Rain, Clear, etc)
+- Corresponding Icons for the description
+- Temperature
+
+For each day, you can also see more details information:
+
+- Min Temp
+- Max Temp
+- Wind Speed
+- Wind Direction
+- Humidity
 
 ## Installation
 
@@ -18,22 +31,19 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in the development mode and will open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload when you make changes.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner for the app, so you can check the current components still work if you wish to make changes.
 
 ## Technologies Used
 
 ### Language
 
-- React
+- React (using `create-react-app`)
 
 ### Testing Utilities
 
@@ -54,6 +64,11 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 ### Mobile
 
 ![Mobile_Image](Mobile-Weather-App.JPG)
+
+## If I had more time
+
+- I would have a state to change the background based on the current day's description (default)
+- I would use that state to change the background, based on the description of any day selected for more details
 
 ### Author
 
