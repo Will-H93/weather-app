@@ -21,7 +21,7 @@ const App = () => {
       setSelectedDate,
       setForecasts,
       setLocation,
-      searchText,
+      "",
       setErrorMessage
     );
   }, []);

@@ -2,8 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import WeatherIcon from "react-icons-weather";
 
-const ForecastSummary = (props) => {
-  const { date, description, icon, temperature, onSelect } = props;
+const ForecastSummary = ({date, description, icon, temperature, onSelect}) => {
   const formattedDate = new Date(date).toDateString();
 
   return (

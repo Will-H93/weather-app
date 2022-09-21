@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import SearchForm from "../components/SearchForm";
 
 describe("SearchForm", () => {
@@ -30,8 +30,22 @@ describe("SearchForm", () => {
       />
     );
 
-    const button = screen.getByText(/Search/i);
+    const button = screen.getByText("Search");
 
     expect(button).toBeInTheDocument();
+  });
+
+  test("clicking button causes submit function to be called", () => {
+    render(
+      <SearchForm
+        searchText={validProps.searchText}
+        setSearchText={validProps.setSearchText}
+        onSubmit={validProps.onSubmit}
+      />
+    );
+    const button = screen.getByText("Search");
+    fireEvent.click(button);
+
+    expect(validProps.onSubmit).toHaveBeenCalledTimes(1);
   });
 });

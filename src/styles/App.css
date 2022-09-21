@@ -1,3 +1,22 @@
 .weather-app {
   margin: 0 20px;
+  display: grid;
+}
+
+@media (max-width: 768px) {
+  .weather-app {
+    margin: 0 20px;
+    display: grid;
+  }
+  .forecast-summaries {
+    flex-direction: column;
+  }
+  .search-form {
+    display: flex;
+    justify-content: center;
+  }
+  .location-details {
+    display: flex;
+    justify-content: center;
+  }
 }
